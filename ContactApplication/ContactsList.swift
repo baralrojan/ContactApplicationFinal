@@ -29,7 +29,7 @@ class ContactsList{
         allContacts.insert(temp, at:toIndex)
     }
     
-    func createContact(firstName:String, lastName:String,phoneNumber:String) -> Contacts {
+    @discardableResult func createContact(firstName:String, lastName:String,phoneNumber:String) -> Contacts {
         let contact = Contacts(firstName: firstName, lastName: lastName, phoneNumber: phoneNumber)
         allContacts.append(contact)
         return contact
