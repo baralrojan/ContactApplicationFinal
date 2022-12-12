@@ -102,8 +102,8 @@ class ContactTableViewController: UITableViewController {
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         let dst = segue.destination as! ContactsDetailsViewController
         if segue.identifier == "add"{
-            let contact = contactsList.createContact()
-            dst.contacts = contact
+            //let contact = contactsList.createContact()
+            dst.contactsList = contactsList
         }
         else if(segue.identifier == "edit"){
             let index = tableView.indexPathForSelectedRow!.row

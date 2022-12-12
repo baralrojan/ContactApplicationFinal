@@ -29,8 +29,8 @@ class ContactsList{
         allContacts.insert(temp, at:toIndex)
     }
     
-    func createContact() -> Contacts {
-        let contact = Contacts(firstName: "", lastName: "", phoneNumber: "")
+    func createContact(firstName:String, lastName:String,phoneNumber:String) -> Contacts {
+        let contact = Contacts(firstName: firstName, lastName: lastName, phoneNumber: phoneNumber)
         allContacts.append(contact)
         return contact
     }
